@@ -1,12 +1,4 @@
-import { Component, NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Timestamp } from './timestamp/timestamp';
-
-@NgModule({
-  declarations: [Timestamp],
-  imports: [CommonModule],
-  exports: [Timestamp],
-})
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'lib-marca-de-tiempo',
