@@ -10,11 +10,11 @@ import { CommonModule } from '@angular/common';
 })
 export class TimestampComponent {
   @Input() date?: Date | string | number;
-  @Input() format: 'dateString' | 'locale' = 'dateString';
+  @Input() format?: string;
 
   get display(): string {
     const d = this.date ? new Date(this.date) : new Date();
-    return this.format === 'locale' ? d.toLocaleString() : d.toDateString();
+    return this.format ? d.toLocaleString(this.format) : d.toLocaleString('es-BO');
   }
 
   get iso(): string {

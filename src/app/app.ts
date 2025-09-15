@@ -9,7 +9,7 @@ import { TimestampComponent } from 'marca-de-tiempo';
   template: `
     <h1>Demo</h1>
     <p>Now: <marca-timestamp></marca-timestamp></p>
-    <p>Given: <marca-timestamp [date]="'2020-01-01T00:00:00Z'" format="locale"></marca-timestamp></p>
+    <p>Given: <marca-timestamp [date]="'2021-09-28'" format="es-BO"></marca-timestamp></p>
   `,
   styleUrls: ['./app.scss']
 })
