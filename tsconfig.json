@@ -6,6 +6,11 @@
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
+    "paths": {
+      "marca-de-tiempo": [
+        "./dist/marca-de-tiempo"
+      ]
+    },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
@@ -29,6 +34,12 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/marca-de-tiempo/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/marca-de-tiempo/tsconfig.spec.json"
     }
   ]
 }

@@ -93,6 +93,36 @@
           }
         }
       }
+    },
+    "marca-de-tiempo": {
+      "projectType": "library",
+      "root": "projects/marca-de-tiempo",
+      "sourceRoot": "projects/marca-de-tiempo/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/marca-de-tiempo/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/marca-de-tiempo/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/marca-de-tiempo/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }
